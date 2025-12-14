@@ -13,7 +13,6 @@ export function initFiltering(elements) {
     const applyFiltering = (query, state, action) => {
         if (action && action.name === 'clear') {
             action.parentElement.querySelector('input').value = '';
-            return query;
         }
 
         const filter = {};
